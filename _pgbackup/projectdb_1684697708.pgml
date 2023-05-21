@@ -27,7 +27,6 @@
                 <dmcolor key="white" color="white"/>
                 <dmcolor key="light" color="#f8f9fa"/>
                 <dmcolor key="dark" color="#212529"/>
-                <dmcolor key="bg_dark" color="001a35"/>
             </dmdesignskill>
             <dmdesignskill skill="headings"></dmdesignskill>
             <dmdesignskill skill="plainhtml" reset="true"></dmdesignskill>
