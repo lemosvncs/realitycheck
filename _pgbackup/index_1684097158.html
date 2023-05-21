@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Design of the Week Template 6 - Pinegrow Web Editor</title>
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+        <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+    </head>
+    <body class="font-light text-gray-500"> 
+        <main>
+            <section class="bg-secondary-500 poster relative text-white">
+                <div class="container mx-auto relative"> 
+                    <nav class="flex flex-wrap items-center p-4"> <a href="#" class="font-bold font-serif hover:text-opacity-75 inline-flex items-center leading-none mr-4 text-white text-xl uppercase"> <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="2em" xml:space="preserve" fill="currentColor" stroke-width="3px" viewBox="0 0 100 100" height="2em" class="mr-1">
+                                <path d="M89.796 39.336c-1.357-5.091-9.368-7.754-20.466-7.669-4.856-5.124-11.712-8.333-19.329-8.333-12.585 0-23.112 8.733-25.911 20.462v-.006c-9.648 5.472-15.248 11.783-13.887 16.869 1.367 5.09 9.375 7.756 20.469 7.672 4.856 5.123 11.712 8.336 19.329 8.336 12.581 0 23.105-8.732 25.908-20.459 9.649-5.472 15.251-11.784 13.887-16.872zM50.001 30c11.042 0 20 8.955 20 20 0 .719-.042 1.426-.117 2.125-4.964 2.234-11.013 4.385-17.663 6.166-6.641 1.781-12.942 2.939-18.353 3.49-2.422-3.308-3.867-7.371-3.867-11.781 0-11.045 8.958-20 20-20zM16.837 58.887c-.554-2.064 1.973-4.756 6.569-7.543a26.446 26.446 0 002.871 10.791c-5.358-.117-8.886-1.188-9.44-3.248zM50.001 70c-3.431 0-6.66-.865-9.485-2.393 4.3-.561 8.828-1.436 13.482-2.682a104.624 104.624 0 0012.985-4.402C63.455 66.205 57.179 70 50.001 70zM76.6 48.652a26.454 26.454 0 00-2.871-10.785c5.357.117 8.887 1.188 9.437 3.246.553 2.061-1.974 4.756-6.566 7.539z"></path>
+                            </svg><span>Reality check</span> </a> 
+                        <button class="hover:bg-white hover:text-secondary-500 ml-auto px-3 py-2 rounded text-white lg:hidden" data-name="nav-toggler" data-pg-ia='{"l":[{"name":"NabMenuToggler","trg":"click","a":{"l":[{"t":"^nav|[data-name=nav-menu]","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"hidden"}}]},{"t":"#gt# span:nth-of-type(1)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":45,"yPercent":300}}]},{"t":"#gt# span:nth-of-type(2)","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":0}}]},{"t":"#gt# span:nth-of-type(3)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":-45,"yPercent":-300}}]}]},"pdef":"true","trev":"true"}]}' data-pg-ia-apply="$nav [data-name=nav-toggler]"> <span class="block border-b-2 border-current my-1 w-6"></span> <span class="block border-b-2 border-current my-1 w-6"></span> <span class="block border-b-2 border-current my-1 w-6"></span> 
+                        </button>                         
+                        <div class="flex-1 hidden space-y-2 w-full lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto" data-name="nav-menu"> 
+                            <div class="flex flex-col mr-auto lg:flex-row"> <a href="#" class="hover:text-primary-500 py-2 text-gray-400 lg:p-4">Why Spacera</a><a href="#" class="hover:text-primary-500 py-2 text-gray-400 lg:p-4">Our Fleet</a><a href="#" class="hover:text-primary-500 py-2 text-gray-400 lg:p-4">The Experience</a><a href="#" class="hover:text-primary-500 py-2 text-gray-400 lg:p-4">Missions</a><a href="#" class="hover:text-primary-500 py-2 text-gray-400 lg:p-4">Destinations</a> 
+                            </div><a href="#" class="border font-bold hover:bg-white hover:text-secondary-500 inline-block px-6 py-2 text-center text-white uppercase">entre em contato</a> 
+                        </div>                         
+                    </nav>                     
+                </div>
+                <div class="container mx-auto px-4 py-48 relative text-center">
+                    <div class="-mx-4 flex flex-wrap items-center justify-center space-y-6 lg:space-y-0">
+                        <div class="px-4 w-full md:w-10/12 xl:w-9/12"> 
+                            <p class="font-bold font-serif mb-1 text-primary-500 text-xl uppercase">We Are Spacera</p>
+                            <h1 class="font-bold text-4xl md:text-5xl lg:leading-tight lg:text-6xl">Industry Leading Commercial Flights to Space</h1> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24"> 
+                <div class="container mx-auto px-4 relative"> 
+                    <div class="-mx-4 flex flex-wrap items-center justify-center mb-12"> 
+                        <div class="px-4 text-center w-full md:w-10/12 xl:w-9/12"> 
+                            <h2 class="font-medium mb-1 text-primary-600 uppercase">Why Spacera</h2> 
+                            <h3 class="font-bold mb-6 text-4xl text-gray-800">Because we&apos;ve A Proven Track Record</h3> 
+                            <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla.</p> 
+                        </div>                         
+                    </div>
+                    <div class="-mx-4 flex flex-wrap justify-center"> 
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <div class="flex items-center mb-4 space-x-2"> 
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.827 6.827" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" width="4rem" height="4rem">
+                                        <g>
+                                            <path d="M3.413 3.8a2.319 2.319 0 012.313 2.173H1.1A2.317 2.317 0 013.412 3.8z" fill="#b0bec5"/>
+                                            <path d="M2.885 4.26a.4.4 0 11-.4.4.4.4 0 01.4-.4z" fill="#eceff1" fill-rule="evenodd"/>
+                                            <path d="M2.089 5.475a.24.24 0 11-.24.24.241.241 0 01.24-.24z" fill="#eceff1" fill-rule="evenodd"/>
+                                            <path d="M3.35 5.187a.346.346 0 11-.327.345.346.346 0 01.327-.345z" fill="#eceff1" fill-rule="evenodd"/>
+                                            <path d="M4.686 5.3a.235.235 0 11-.234.234.235.235 0 01.234-.234z" fill="#eceff1" fill-rule="evenodd"/>
+                                            <path d="M4.018 4.648a.138.138 0 11-.138.138.138.138 0 01.138-.138z" fill="#eceff1" fill-rule="evenodd"/>
+                                            <path d="M3.413 3.8a2.319 2.319 0 012.313 2.173H3.413z" fill="#9eabb1"/>
+                                            <path d="M3.413 5.193a.346.346 0 010 .68z" fill="#d4d7d9" fill-rule="evenodd"/>
+                                            <path d="M4.686 5.3a.235.235 0 11-.234.234.235.235 0 01.234-.234z" fill="#d4d7d9" fill-rule="evenodd"/>
+                                            <path d="M4.018 4.648a.138.138 0 11-.138.138.138.138 0 01.138-.138z" fill="#d4d7d9" fill-rule="evenodd"/>
+                                            <g>
+                                                <path d="M1.859 1.084a.1.1 0 00-.2.035l.691 3.965a.1.1 0 10.2-.034l-.69-3.966z" fill="#37474f"/>
+                                                <path d="M1.892 1.27a6.58 6.58 0 01.9-.1 2 2 0 001.04-.224l.131-.093.028.158.217 1.248.011.066-.056.037a1.823 1.823 0 01-1.107.227 2.386 2.386 0 00-.915.112z" fill="#f4511e"/>
+                                            </g>
+                                        </g>
+                                        <path d="M0 0h6.827v6.827H0z" fill="none" fill-rule="evenodd"/>
+                                    </svg>
+                                </div>                                 
+                                <h2 class="font-bold text-gray-900 text-xl">25+ Years in the Field</h2> 
+                            </div>                             
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                        </div>
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <div class="flex items-center mb-4 space-x-2"> 
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.827 6.827" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" width="4rem" height="4rem">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h6.827v6.827H0z"/>
+                                            <path d="M.853.853h5.12v5.12H.853z"/>
+                                        </g>
+                                        <path d="M4.269 1.631a2.54 2.54 0 00-.695-.206 3.044 3.044 0 011.537 4.159 2.527 2.527 0 00-.842-3.953z" fill="#263238"/>
+                                        <path d="M2.824.853l.119.419.433.133-.419.118-.133.433-.118-.418-.433-.138.418-.119z" fill="#ff8f00" fill-rule="evenodd"/>
+                                        <circle cx="1.955" cy="1.955" r="1.955" transform="translate(1.092 2.065)" fill="#1e88e5"/>
+                                        <path d="M4.022 2.837v.031l-.047.01-.007.068h.057l.076-.008.04-.046-.041-.016-.02-.026-.034-.056-.017-.078-.064.013-.018.028v.031l.03.02z" fill="#81c784" fill-rule="evenodd"/>
+                                        <path d="M3.968 2.863v-.042L3.933 2.8l-.052.012-.04.063v.04h.046zM2.885 3.042l-.012.03h-.056V3.1h.013v.014h.035l.023-.014.006-.027h.028l.01-.023-.025-.005h-.022zM2.74 3.1v.028h.04l.005-.029-.025-.02z" fill="#81c784" fill-rule="evenodd"/>
+                                        <path d="M4.339 2.553c.045.04.089.082.13.126v.1l-.084.043.009.028h.134l.038-.057a1.968 1.968 0 01.223.344l-.012.013v.087l.038-.005h.02l.036.086h-.1l-.053-.058-.01-.09-.052.03-.029.11-.075-.08v-.076l-.073-.063-.027-.027h-.088l.027.076.1.056.018.02-.022.01v.06l-.05.02L4.4 3.3l-.027-.037h.069l.019-.024-.153-.1-.014-.049-.062.056-.063-.013-.1.124-.018.05-.062.005H3.9l-.054-.025-.016-.108.02-.051.091-.02.1.02.013-.056-.043-.01.015-.086.1-.016.071-.1.073-.013.066.01h.024l-.013-.094-.08.033-.028-.07-.039-.007-.009-.048.038-.041.09-.036.024-.041zm.584.917c.01.033.02.067.027.1l-.005.006.011.021a1.96 1.96 0 01-.392 1.654H4.5v-.13l-.075-.1v-.155l-.057-.056v-.065l.072-.139-.14-.242.015-.164-.124-.013-.045-.046h-.083l-.042.04h-.147v.013h-.086L3.6 3.98v-.165l.03-.012.012-.063H3.6l-.018-.067.218-.156v-.11l.106-.06.043.005h.087l.064-.036.22-.018v.113l.173.044.034.024h.032v-.061l.1-.01.095.071h.156l.01-.01zm-3.676-.214c.022-.05.045-.1.071-.149l.08-.1v-.035a1.94 1.94 0 01.5-.537H2l.044.024.083.018.006.032.132.005-.018-.042h-.116l.027-.025-.01-.031h-.11l.116-.086h.11l.052.071.087.006.052-.05.039.018-.072.07h-.094a.316.316 0 01.008.068h.12l.013-.032.083-.005.01-.05-.049-.007.016-.044.038-.012.13.007-.072.065.011.05.075.012v-.091l.071-.038.127-.014.184.081V2.5l.058.015-.03.055h-.086l-.025.063-.189-.045.149-.079-.057-.048-.128.016-.012.012-.037.039-.061.005.005.03.021.01v.01l-.05.006v.03h-.047l-.009-.058-.095.033-.174.1.02.072.054.034.1.014v.11l.045-.007.042-.087.1-.032v-.133l.058-.044.14.033-.01.088h.035l.1-.05.005.115.075.045v.069l-.071.024v.023l.086.039v.047H3.08l-.109-.034-.005-.034L3 2.965v-.032l-.034-.009-.009.03-.06.009H2.871l-.017-.034-.02-.009H2.79l-.02.016v.035l.038.012.036.005L2.835 3l-.035.032-.015-.018-.032-.008-.086.081.01.01-.127.07-.12.126-.009.055-.12.08-.06.06.006.12-.082-.039V3.5h-.23l-.12.06-.052.1-.02.076.033.074.094.011.15-.1.013.05-.046.086.114.02.012.176.156.026.1-.114.12.024.043.058.115-.006v-.037l.064.032.071.112h.123l.046.08.007.1.136.052h.172l.05.083.077.025-.015.068-.078.102-.024.236-.076.06h-.112l-.038.065.028.122-.122.157-.039.071-.117.052-.077.011v.033l.054.015-.007.035-.048.047.03.036h.057v.044l-.015.044-.005.036.081.078-.01.037h-.117l-.116-.1-.09-.16.012-.152-.068-.092.027-.154-.04-.011v-.342s-.114-.086-.12-.086l-.06-.014-.012-.064-.148-.185.015-.067v-.109l.1-.071-.015-.122-.143-.008-.117-.134-.082-.026-.054-.01.006-.048-.068-.01V3.9l-.17-.042-.07-.105.029-.053-.109-.156-.018-.116h-.044l.015.113.075.115-.008.044-.064-.01-.078-.133V3.4l-.081-.039v-.11zm.65-.719h.043v-.015h.07v.03l-.02.027H1.9v-.042zm.069.1l.046-.007v.043l-.1.006-.012-.027.069-.02zm.112.225l.051-.025.046.012-.015.062-.05.016-.032-.065zM2.35 3v.04h-.117l-.044-.011L2.2 3l.056-.023h.077V3h.017zm.054.056V3.1l-.03.018-.036.007v-.066H2.4zm-.033-.015V3l.04.037zm.018.093v.038l-.028.028H2.3l.01-.042h.029l.006-.014.045-.007zm-.155-.078H2.3l-.083.116-.034-.018.007-.049.045-.049zm.265.065v.038h-.062l-.018-.025V3.1h.006zm-.058-.052l.018-.019.03.019-.024.02z" fill="#81c784" fill-rule="evenodd"/>
+                                        <path d="M3.047 2.065a1.955 1.955 0 010 3.91v-3.91z" fill="#1b7ace" fill-rule="evenodd"/>
+                                        <path d="M4.022 2.837v.031l-.047.01-.007.068h.057l.076-.008.04-.046-.041-.016-.02-.026-.034-.056-.017-.078-.064.013-.018.028v.03l.03.022z" fill="#74b377" fill-rule="evenodd"/>
+                                        <path d="M3.968 2.863v-.042L3.933 2.8l-.052.012-.04.063v.04h.046zM4.339 2.553c.045.04.089.082.13.126v.1l-.084.043.009.028h.134l.038-.057a1.968 1.968 0 01.223.344l-.012.013v.087l.038-.005h.02l.036.086h-.1l-.053-.058-.01-.09-.052.03-.029.11-.075-.08v-.076l-.073-.063-.027-.027h-.088l.027.076.1.056.018.02-.022.01v.06l-.05.02L4.4 3.3l-.027-.037h.069l.019-.024-.153-.1-.014-.049-.062.056-.063-.013-.1.124-.018.05-.062.005H3.9l-.054-.025-.016-.108.02-.051.091-.02.1.02.013-.056-.043-.01.015-.086.1-.016.071-.1.073-.013.066.01h.024l-.013-.094-.08.033-.028-.07-.039-.007-.009-.048.038-.041.09-.036.024-.041zM3.047 5.179v-.824l.053.02h.172l.05.083.077.025-.015.068-.084.108-.024.236-.076.06h-.112l-.038.065.028.122-.032.041zm0-2.135V2.98l.061.028v.047h-.025l-.035-.01zm0-.109v-.11l.045.027v.069zm0-.362v-.158l.042.018V2.5l.058.015-.03.055h-.07zm1.876.9c.01.033.02.067.027.1l-.005.006.011.021a1.96 1.96 0 01-.392 1.654H4.5v-.13l-.075-.1v-.158l-.057-.056v-.065l.072-.139-.14-.242.015-.164-.124-.013-.045-.046h-.083l-.042.04h-.147v.013h-.086L3.6 3.98v-.165l.03-.012.012-.063H3.6l-.018-.067.218-.156v-.11l.106-.06.043.005h.087l.064-.036.22-.018v.113l.173.044.034.024h.032v-.061l.1-.01.095.071h.156l.01-.01z" fill="#74b377" fill-rule="evenodd"/>
+                                        <path d="M0 0h6.827v6.827H0z" fill="none" fill-rule="evenodd"/>
+                                    </svg>
+                                </div>                                 
+                                <h2 class="font-bold text-gray-900 text-xl">History of Space Missions</h2> 
+                            </div>                             
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                        </div>
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <div class="flex items-center mb-4 space-x-2"> 
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.827 6.827" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" width="4rem" height="4rem">
+                                        <path d="M3.413 5.965c-.973.085-2.086-.521-2.086-.521.57-.309.437-.875.437-.875h3.299s-.134.566.437.875c0 0-1.113.606-2.087.521z" fill="#78909c"/>
+                                        <circle cx="3.413" cy="3.098" r="2.244" fill="#b0bec5"/>
+                                        <path d="M5.41 2.842c-.506-.306-1.24-.498-2.058-.498-.748 0-1.427.16-1.925.422a2.014 2.014 0 103.984.076z" fill="#37474f"/>
+                                        <path d="M1.666 3.098a.053.053 0 00-.106 0 1.854 1.854 0 001.435 1.806.053.053 0 00.023-.104 1.747 1.747 0 01-1.352-1.702z" fill="#6d797f" fill-rule="nonzero"/>
+                                        <path d="M3.413 4.57h1.65s-.134.565.437.874c0 0-1.113.606-2.087.521V4.57z" fill="#546e7a"/>
+                                        <path d="M3.413.853a2.244 2.244 0 010 4.489V.853z" fill="#90a4ae"/>
+                                        <path d="M5.41 2.842c-.493-.298-1.204-.488-1.997-.497V5.11a2.014 2.014 0 001.998-2.269z" fill="#263238"/>
+                                        <path d="M0 0h6.827v6.827H0z" fill="none"/>
+                                    </svg>
+                                </div>                                 
+                                <h2 class="font-bold text-gray-900 text-xl">Safest &amp; Reliable</h2> 
+                            </div>                             
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                        </div>
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <div class="flex items-center mb-4 space-x-2"> 
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.827 6.827" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" width="4rem" height="4rem">
+                                        <g>
+                                            <path d="M3.724 3.644l.48.48-.08.08-.48-.48z" fill="#01579b" fill-rule="evenodd"/>
+                                            <path d="M2.654 2.574l.48.48-.08.08-.48-.48z" fill="#01579b" fill-rule="evenodd"/>
+                                            <path d="M4.207 3.619l1.768 1.768-.59.589-1.767-1.768z" fill="#0277bd" fill-rule="evenodd"/>
+                                            <path d="M4.208 3.618l.3.294-.3.294-.294-.3.294-.294zm.292.3l-.293-.292-.292.292.292.292.293-.297z" fill="#eee"/>
+                                            <path d="M4.794 4.207L4.5 3.915l-.293.292.293.293zm-.291-.3l.294.294L4.5 4.5l-.3-.3.3-.294z" fill="#eee"/>
+                                            <path d="M4.8 4.206l.294.3L4.8 4.8l-.3-.3.3-.3zm.291.3L4.8 4.209l-.3.291.292.292z" fill="#eee"/>
+                                            <path d="M5.382 4.8l-.292-.3-.29.3.292.292zm-.29-.3l.294.294-.3.294L4.8 4.8l.3-.3z" fill="#eee"/>
+                                            <path d="M5.386 4.8l.294.294-.294.3-.3-.3.3-.294zm.29.3l-.291-.3-.293.292.293.292.292-.292z" fill="#eee"/>
+                                            <path d="M5.971 5.385l-.292-.293-.292.293.292.292zm-.291-.3l.294.3-.3.294-.294-.294.294-.3zm-2.06-.878l.293.293.292-.293-.292-.292-.292.292zm.292.3l-.294-.3.3-.294.294.294-.3.3z" fill="#eee"/>
+                                            <path d="M4.206 4.8l-.294-.3.294-.3.3.3-.3.294zm-.29-.3l.291.292L4.5 4.5l-.293-.293-.292.293z" fill="#eee"/>
+                                            <path d="M4.21 4.8l.292.292.292-.292-.294-.3zm.29.3l-.294-.3.294-.3.294.3-.294.291z" fill="#eee"/>
+                                            <path d="M4.8 5.386l-.3-.3.3-.294.294.3-.3.3zm-.3-.296l.292.292.292-.292L4.8 4.8z" fill="#eee"/>
+                                            <path d="M4.8 5.385l.292.292.292-.292-.294-.293zm.291.3l-.294-.294.3-.3.3.3-.3.294z" fill="#eee"/>
+                                            <path d="M5.384 5.974l-.3-.294.3-.294.294.294-.294.294zm-.292-.3l.293.292.292-.292-.292-.292z" fill="#eee"/>
+                                            <path d="M1.441.854l1.768 1.768-.59.589L.853 1.443z" fill="#0277bd" fill-rule="evenodd"/>
+                                            <path d="M1.443.852l.294.295-.295.294-.294-.294.293-.295zm.291.3L1.442.855l-.292.293.292.292.292-.292z" fill="#eee"/>
+                                            <path d="M2.028 1.442l-.292-.292-.292.292.292.292.292-.292zm-.29-.295l.294.294-.295.294-.294-.295.295-.294z" fill="#eee"/>
+                                            <path d="M2.032 1.44l.294.295-.294.3-.294-.295.294-.294zm.29.3l-.291-.292-.293.292.293.292.292-.292z" fill="#eee"/>
+                                            <path d="M2.617 2.03l-.292-.292-.292.293.292.292.292-.292zm-.291-.295l.294.294-.3.3-.3-.294.3-.294z" fill="#eee"/>
+                                            <path d="M2.62 2.03l.294.294-.294.296-.294-.3.3-.3zm.291.3l-.292-.292-.292.292.292.292z" fill="#eee"/>
+                                            <path d="M3.206 2.62l-.293-.293-.292.292.292.292.293-.292zm-.292-.3l.3.294-.3.294-.296-.288.294-.294zM.855 1.442l.293.292.292-.292-.292-.292-.293.292zm.292.295l-.295-.294.295-.294.294.295-.294.294z" fill="#eee"/>
+                                            <path d="M1.44 2.032l-.293-.295.295-.294.294.295-.295.295zm-.29-.3l.292.292.292-.292-.292-.292z" fill="#eee"/>
+                                            <path d="M1.444 2.03l.292.293.292-.292-.292-.293-.292.293zm.291.3l-.294-.294.295-.294.295.294-.295.3z" fill="#eee"/>
+                                            <path d="M2.03 2.62l-.295-.294.294-.3.3.3-.294.294zm-.292-.3l.293.292.292-.292-.292-.292z" fill="#eee"/>
+                                            <path d="M2.033 2.62l.292.291.292-.292-.292-.292-.292.292zm.29.294L2.03 2.62l.3-.294.294.3-.3.294z" fill="#eee"/>
+                                            <path d="M2.618 3.209l-.294-.3.3-.294.294.294-.294.3zm-.291-.3l.292.293.292-.293-.292-.292z" fill="#eee"/>
+                                            <path d="M3.768 2.459l.6.6a.129.129 0 01.022.178L2.983 4.643a.129.129 0 01-.178-.021l-.6-.6a.13.13 0 01-.022-.179L3.59 2.437a.129.129 0 01.178.022z" fill="#616161" fill-rule="evenodd"/>
+                                            <path d="M4.068 2.759l.3.3a.129.129 0 01.022.178L2.983 4.643a.129.129 0 01-.178-.021l-.3-.3z" fill="#616161" fill-rule="evenodd"/>
+                                            <path d="M3.768 2.459l.3.3L2.5 4.322l-.3-.3a.13.13 0 01-.022-.179L3.59 2.437a.129.129 0 01.178.022z" fill="#757575" fill-rule="evenodd"/>
+                                            <g>
+                                                <path d="M2.032 4.86l-.388.387-.065-.065.388-.382z" fill="#283593"/>
+                                                <path d="M1.678 4.366v.857h-.092v-.857z" fill="#283593"/>
+                                                <path d="M2.478 5.166v.092H1.62v-.092z" fill="#283593"/>
+                                                <path d="M1.3 4.22a.937.937 0 011.306 1.307z" fill="#424242" fill-rule="evenodd"/>
+                                                <path d="M2.505 4.321a.936.936 0 01.1 1.2l-.653-.652z" fill="#3b3b3b" fill-rule="evenodd"/>
+                                                <path d="M1.3 4.22a.937.937 0 011.205.1l-.552.553z" fill="#424242" fill-rule="evenodd"/>
+                                                <circle cx=".112" cy=".112" r=".112" transform="rotate(45 -5.263 4.488)" fill="#bf360c"/>
+                                            </g>
+                                        </g>
+                                        <path d="M0 0h6.827v6.827H0z" fill="none" fill-rule="evenodd"/>
+                                    </svg>
+                                </div>                                 
+                                <h2 class="font-bold text-gray-900 text-xl">Constant Support &amp; Backup</h2> 
+                            </div>                             
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                        </div>
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <div class="flex items-center mb-4 space-x-2"> 
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.827 6.827" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" width="4rem" height="4rem">
+                                        <path d="M2.105 5.354a.26.26 0 01.068.01.26.26 0 01.254-.312.257.257 0 01.2.09.259.259 0 01.26-.074.26.26 0 01.472-.122.258.258 0 01.322.02.26.26 0 01.237.2.259.259 0 01.29.077.26.26 0 01.495.125.26.26 0 01.322.29v.312h-3.18v-.36a.26.26 0 01.26-.259z" fill="#90a4ae" fill-rule="evenodd"/>
+                                        <path d="M3.709 4.886h-.152s-.265.265.152.53c.417-.265.151-.53.151-.53h-.15z" fill="#ffab00" fill-rule="evenodd"/>
+                                        <path d="M3.709 4.886h-.152s-.265.265.152.53c.417-.265.151-.53.151-.53h-.15z" fill="#ffab00" fill-rule="evenodd"/>
+                                        <path d="M3.709 5.416c.417-.265.151-.53.151-.53h-.15v.53z" fill="#e69a00" fill-rule="evenodd"/>
+                                        <path d="M3.709 4.886h-.082s-.142.142.082.285c.224-.143.081-.285.081-.285h-.08z" fill="#ffd54f" fill-rule="evenodd"/>
+                                        <path d="M3.709 5.171c.224-.143.081-.285.081-.285h-.08v.285z" fill="#e6c047" fill-rule="evenodd"/>
+                                        <path d="M3.118 4.886h-.152s-.265.265.152.53c.416-.265.151-.53.151-.53h-.151z" fill="#ffab00" fill-rule="evenodd"/>
+                                        <path d="M3.118 4.886h-.152s-.265.265.152.53c.416-.265.151-.53.151-.53h-.151z" fill="#ffab00" fill-rule="evenodd"/>
+                                        <path d="M3.118 5.416c.416-.265.151-.53.151-.53h-.151v.53z" fill="#e69a00" fill-rule="evenodd"/>
+                                        <path d="M3.118 4.886h-.082s-.143.142.082.285c.224-.143.081-.285.081-.285z" fill="#ffd54f" fill-rule="evenodd"/>
+                                        <path d="M3.118 5.171c.224-.143.081-.285.081-.285h-.081z" fill="#e6c047" fill-rule="evenodd"/>
+                                        <path d="M3.5 1.008a4.024 4.024 0 01.478 2.513c-.01.246-.021.514-.021.827v.1H2.87v-.1c0-.294-.01-.55-.02-.79a4.124 4.124 0 01.477-2.55l.086-.155.086.155zm-.086.767a.133.133 0 11-.134.133.134.134 0 01.134-.133z" fill="#c0ca33" fill-rule="evenodd"/>
+                                        <path d="M3.5 1.008a4.024 4.024 0 01.478 2.513c-.01.246-.021.514-.021.827v.1h-.544v-2.4a.133.133 0 100-.267V.853l.086.155z" fill="#afb42b" fill-rule="evenodd"/>
+                                        <path d="M4.5 2.475l-.022.038a2.092 2.092 0 00-.28.906A5.1 5.1 0 004.2 4l.007.18v.012l.01.007.36.279.037.013h.171v-.026c0-.163.006-.326.013-.489a4.789 4.789 0 000-.6 2.074 2.074 0 00-.28-.864L4.5 2.475z" fill="#26c6da" fill-rule="evenodd"/>
+                                        <path d="M4.5 4.417l.078.06.037.013h.171v-.025c0-.163.006-.326.013-.489a4.789 4.789 0 000-.6 2.074 2.074 0 00-.28-.864L4.5 2.475v1.942z" fill="#00acc1" fill-rule="evenodd"/>
+                                        <path d="M2.292 2.475l.022.038a2.1 2.1 0 01.28.906 5.1 5.1 0 010 .58l-.007.37v.013l-.01.007-.36.278-.037.013h-.174v-.025c0-.163-.006-.516-.013-.679a4.789 4.789 0 010-.6 2.079 2.079 0 01.279-.864l.021-.038z" fill="#26c6da" fill-rule="evenodd"/>
+                                        <path d="M2.292 4.607l-.078.06-.037.013h-.171v-.025c0-.163-.006-.516-.013-.679a4.789 4.789 0 010-.6 2.079 2.079 0 01.279-.864l.021-.038v2.133z" fill="#00acc1" fill-rule="evenodd"/>
+                                        <path d="M3.926 3.819l1.16.9-.06.176H1.8l-.06-.176 1.16-.9.152-.119.006.193q.006.177.008.355h.693q0-.178.007-.355l.006-.193.153.118z" fill="#f57c00"/>
+                                        <path d="M3.926 3.819l1.16.9-.06.176H3.412V4.25h.347q0-.178.007-.355l.006-.195.153.118z" fill="#ef6c00"/>
+                                        <path d="M3.6 1.909a.184.184 0 11-.184-.17.184.184 0 01.184.17z" fill="#fffffe" fill-rule="evenodd"/>
+                                        <path d="M3.6 1.909a.184.184 0 01-.183.184v-.368a.183.183 0 01.183.184z" fill="#e6e6e5" fill-rule="evenodd"/>
+                                        <path d="M3.547 1.909a.133.133 0 10-.133.133.133.133 0 00.133-.133z" fill="#00acc1" fill-rule="evenodd"/>
+                                        <path d="M3.547 1.909a.133.133 0 00-.133-.134v.267a.134.134 0 00.133-.133z" fill="#009bae" fill-rule="evenodd"/>
+                                        <path data-name="Path 7082" d="M0 0h6.827v6.827H0z" fill="none" fill-rule="evenodd"/>
+                                    </svg>
+                                </div>                                 
+                                <h2 class="font-bold text-gray-900 text-xl">Advanced Infrastructure</h2> 
+                            </div>                             
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+            <section class="relative"> 
+                <img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDIwfHxza3lsaW5lfGVufDB8fHx8MTYyNjU0OTQ4NQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=500&fit=crop" class="absolute h-full left-0 object-cover top-0 w-full z-0" alt="..." width="1200" height="500"/>
+                <div class="container mx-auto pb-12 pt-96 px-4 relative lg:pt-60"> 
+                    <div class="flex flex-wrap -mx-4  items-center"> 
+                        <div class="px-4 w-full lg:w-6/12"> 
+                            <div class="bg-white p-8 sm:p-12">
+                                <h2 class="font-medium mb-1 text-primary-500 uppercase">New Rocketship</h2>
+                                <h3 class="font-bold mb-2 text-5xl text-gray-800">Orbiter 11</h3>
+                                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac sagittis neque, vel egestas est.</p><a href="#" class="bg-secondary-500 hover:bg-secondary-700 inline-block px-6 py-2 text-white">Explore</a>
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+            <section class="relative"> 
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDIwfHxza3lsaW5lfGVufDB8fHx8MTYyNjU0OTQ4NQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=500&fit=crop" class="absolute h-full left-0 object-cover top-0 w-full z-0" alt="..." width="1200" height="500"/>
+                <div class="container mx-auto pb-12 pt-96 px-4 relative lg:pt-60"> 
+                    <div class="-mx-4 flex flex-wrap items-center justify-end"> 
+                        <div class="px-4 w-full lg:w-6/12"> 
+                            <div class="bg-white p-8 sm:p-12">
+                                <h2 class="font-medium mb-1 text-primary-500 uppercase">Mission 2024</h2>
+                                <h3 class="font-bold mb-2 text-5xl text-gray-800">Earth Orbit</h3>
+                                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac sagittis neque, vel egestas est.</p><a href="#" class="bg-secondary-500 hover:bg-secondary-700 inline-block px-6 py-2 text-white">Explore</a>
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+            <section class="relative"> 
+                <img src="https://images.unsplash.com/photo-1615627121117-e3278bc8b1db?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDIwfHxza3lsaW5lfGVufDB8fHx8MTYyNjU0OTQ4NQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1200&h=500&fit=crop" class="absolute h-full left-0 object-cover top-0 w-full z-0" alt="..." width="1200" height="500"/>
+                <div class="container mx-auto pb-12 pt-96 px-4 relative lg:pt-60"> 
+                    <div class="-mx-4 flex flex-wrap items-center"> 
+                        <div class="px-4 w-full lg:w-6/12"> 
+                            <div class="bg-white p-8 sm:p-12">
+                                <h2 class="font-medium mb-1 text-primary-500 uppercase">Next Mission</h2>
+                                <h3 class="font-bold mb-2 text-5xl text-gray-800">Moon, Mars and Beyond</h3>
+                                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac sagittis neque, vel egestas est.</p><a href="#" class="bg-secondary-500 hover:bg-secondary-700 inline-block px-6 py-2 text-white">Explore</a>
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+            <section class="bg-primary-500 py-24 text-gray-300"> 
+                <div class="container mx-auto px-4 relative"> 
+                    <div class="-mx-4 flex flex-wrap items-center justify-center"> 
+                        <div class="px-4 text-center w-full lg:w-8/12"> 
+                            <h2 class="font-bold mb-2 text-5xl text-white">Book Your Seat Now</h2> 
+                            <p class="mb-6">Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet.</p> 
+                            <div class="mx-auto px-4 w-full sm:w-10/12 xl:w-8/12"> 
+                                <form class="text-gray-600 text-left"> 
+                                    <div class="-mx-4 flex flex-wrap mb-6"> 
+                                        <div class="p-2 w-full md:w-6/12"> 
+                                            <div class="bg-white px-3 py-2"> 
+                                                <label class="block font-medium text-gray-400 text-sm" for="inputName">Full Name</label>
+                                                <input class="appearance-none outline-none w-full" placeholder="Enter name..." type="text" id="inputName" value="Enter Name"/> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="p-2 w-full md:w-6/12">
+                                            <div class="bg-white px-3 py-2"> 
+                                                <label class="block font-medium text-gray-400 text-sm" for="inputEmail">Email</label>
+                                                <input class="appearance-none outline-none w-full" placeholder="Enter email..." type="email" id="inputEmail" value="name@example.com"/> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="p-2 w-full md:w-6/12"> 
+                                            <div class="bg-white px-3 py-2"> 
+                                                <label class="block font-medium text-gray-400 text-sm" for="inputOrbit">Desired Orbit</label>                                                 
+                                                <div class="relative"> 
+                                                    <select required="" class="appearance-none pr-4 w-full" id="inputOrbit" name="inputOrbit">
+                                                        <option selected="" disabled="" value="">Select One</option>
+                                                        <option>Earth</option>
+                                                        <option>Moon</option>
+                                                        <option>Mars</option>
+                                                    </select><span class="absolute inline-flex inset-y-0 items-center right-0 text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path>
+                                                        </svg></span> 
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                        <div class="p-2 w-full md:w-6/12"> 
+                                            <div class="bg-white px-3 py-2"> 
+                                                <label class="block font-medium text-gray-400 text-sm" for="inputDate">Date</label>                                                 
+                                                <input class="appearance-none outline-none w-full" type="date" id="inputDate"/>
+                                            </div>                                             
+                                        </div>
+                                    </div>                                     
+                                    <div class="text-center">
+                                        <button type="submit" class="bg-secondary-600 font-medium hover:bg-secondary-700 inline-block px-6 py-2 text-center text-white">Submit Request</button>
+                                    </div>                                     
+                                </form>
+                            </div>
+                        </div>                         
+                    </div>
+                </div>                 
+            </section>
+            <div class="bg-secondary-600 py-6 text-center"> 
+                <div class="container mx-auto px-4 relative"> 
+                    <div class="flex-wrap inline-flex space-x-4"> <a href="#" class="bg-white hover:bg-secondary-700 hover:text-white p-2 rounded-full text-secondary-500" aria-label="facebook"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"> 
+                                <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/> 
+                            </svg></a> <a href="#" class="bg-white hover:bg-secondary-700 hover:text-white p-2 rounded-full text-secondary-500" aria-label="twitter"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"> 
+                                <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/> 
+                            </svg></a> <a href="#" class="bg-white hover:bg-secondary-700 hover:text-white p-2 rounded-full text-secondary-500" aria-label="instagram"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"> 
+                                <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/> 
+                            </svg></a> <a href="#" class="bg-white hover:bg-secondary-700 hover:text-white p-2 rounded-full text-secondary-500" aria-label="linkedin"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"> 
+                                <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/> 
+                            </svg></a> <a href="#" class="bg-white hover:bg-secondary-700 hover:text-white p-2 rounded-full text-secondary-500" aria-label="youtube"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"> 
+                                <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/> 
+                            </svg></a> 
+                    </div>                     
+                </div>                 
+            </div>
+        </main>
+        <footer class="bg-black bg-opacity-90 pt-12 text-gray-300"> 
+            <div class="container mx-auto px-4 relative"> 
+                <div class="flex flex-wrap -mx-4"> 
+                    <div class="w-full p-4 xl:w-4/12"> <a href="#" class="font-bold font-serif hover:text-opacity-75 inline-flex items-center leading-none mb-6 text-3xl text-primary-500 uppercase xl:flex-col xl:items-start"> <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="2.5em" xml:space="preserve" fill="currentColor" viewBox="0 0 100 100" height="2.5em" class="mr-2">
+                                <path d="M89.796 39.336c-1.357-5.091-9.368-7.754-20.466-7.669-4.856-5.124-11.712-8.333-19.329-8.333-12.585 0-23.112 8.733-25.911 20.462v-.006c-9.648 5.472-15.248 11.783-13.887 16.869 1.367 5.09 9.375 7.756 20.469 7.672 4.856 5.123 11.712 8.336 19.329 8.336 12.581 0 23.105-8.732 25.908-20.459 9.649-5.472 15.251-11.784 13.887-16.872zM50.001 30c11.042 0 20 8.955 20 20 0 .719-.042 1.426-.117 2.125-4.964 2.234-11.013 4.385-17.663 6.166-6.641 1.781-12.942 2.939-18.353 3.49-2.422-3.308-3.867-7.371-3.867-11.781 0-11.045 8.958-20 20-20zM16.837 58.887c-.554-2.064 1.973-4.756 6.569-7.543a26.446 26.446 0 002.871 10.791c-5.358-.117-8.886-1.188-9.44-3.248zM50.001 70c-3.431 0-6.66-.865-9.485-2.393 4.3-.561 8.828-1.436 13.482-2.682a104.624 104.624 0 0012.985-4.402C63.455 66.205 57.179 70 50.001 70zM76.6 48.652a26.454 26.454 0 00-2.871-10.785c5.357.117 8.887 1.188 9.437 3.246.553 2.061-1.974 4.756-6.566 7.539z"></path>
+                            </svg><span>Spacera</span> </a> 
+                        <p>                             Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper. </p> 
+                    </div>                     
+                    <div class="p-4 w-full sm:w-6/12 md:w-4/12 xl:w-2/12"> 
+                        <h2 class="font-bold mb-8 text-lg text-primary-500">General</h2> 
+                        <ul> 
+                            <li class="mb-4"> <a href="#" class="hover:text-primary-600">FAQ</a> 
+                            </li>
+                            <li class="mb-4"> <a href="#" class="hover:text-primary-600">News</a> 
+                            </li>                             
+                            <li class="mb-4"> <a href="#" class="hover:text-primary-600">Careers</a> 
+                            </li>
+                            <li class="mb-4"> <a href="#" class="hover:text-primary-600">Contact Us</a> 
+                            </li>
+                            <li class="mb-4"> <a href="#" class="hover:text-primary-600">Contact Us</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="p-4 w-full sm:w-6/12 md:w-4/12 xl:w-2/12"> 
+                        <h2 class="font-bold mb-8 text-lg text-primary-500">Links</h2> 
+                        <ul> 
+                            <li class="mb-4"> <a href="#" class="hover:text-primary-600">Shop</a> 
+                            </li>                             
+                            <li class="mb-4"> <a href="#" class="hover:text-primary-600">Flights</a> 
+                            </li>                             
+                            <li class="mb-4"> <a href="#" class="hover:text-primary-600">Routes</a> 
+                            </li>                             
+                            <li class="mb-4"> <a href="#" class="hover:text-primary-600">Research</a> 
+                            </li>                             
+                            <li class="mb-4"> <a href="#" class="hover:text-primary-600">Experience</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="md:w-4/12 p-4 w-full xl:w-4/12"> 
+                        <h2 class="font-bold mb-8 text-lg text-primary-500">Subscribe</h2> 
+                        <p class="mb-4">                             Subscribe to our newsletter and get exclusive updates directly in your inbox. </p> 
+                        <form> 
+                            <div class="bg-white border border-gray-400 flex items-center mb-6 overflow-hidden p-1"> 
+                                <input class="appearance-none border-primary-600 flex-1 font-light outline-none p-2 text-gray-600 w-full" placeholder="Enter email..." type="email"/> 
+                                <button type="submit" class="bg-primary-500 font-medium hover:bg-primary-700 inline-block px-6 py-2 text-center text-white uppercase" aria-label="submit">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-4 inline-block w-4"> 
+                                        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"/> 
+                                    </svg>
+                                </button>                                 
+                            </div>                             
+                        </form>                         
+                    </div>                     
+                </div>                 
+                <div class="py-4"> 
+                    <hr class="mb-4 opacity-25"> 
+                    <div class="flex flex-wrap -mx-4  items-center"> 
+                        <div class="px-4 py-2 w-full md:flex-1"> 
+                            <p>2023. Reality Check | Loureiro&amp;Lemos</p> 
+                        </div>                         
+                        <div class="px-4 py-2 w-full sm:w-auto">Política de Privacidade</div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </footer>
+    </body>
+</html>
