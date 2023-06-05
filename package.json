@@ -1,0 +1,22 @@
+{
+  "name": "realitycheck",
+  "version": "1.0.0",
+  "description": "Reality Check",
+  "main": "index.js",
+  "scripts": {
+    "test": "trunk serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemosvncs/realitycheck.git"
+  },
+  "author": "Vini Lemos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemosvncs/realitycheck/issues"
+  },
+  "homepage": "https://github.com/lemosvncs/realitycheck#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
