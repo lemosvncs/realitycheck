@@ -1,14 +1,70 @@
-# realitycheck
+# Leptos Starter Template
 
-Claro, eu posso te ajudar a criar o texto de uma sessão de serviços do site de uma empresa focada em prover soluções de análise dados e inteligência artifical para mestrandos, doutorandos e pequenos empresários. Veja um possível exemplo abaixo:
+This is a template demonstrating how to integrate [TailwindCSS](https://tailwindcss.com/) with the [Leptos](https://github.com/leptos-rs/leptos) web framework and the [trunk](https://github.com/thedodd/trunk) tool.
 
-Serviços
-A nossa empresa oferece soluções personalizadas de análise de dados e inteligência artificial para os mais diversos tipos de projetos acadêmicos e empresariais. Nós utilizamos as melhores ferramentas e técnicas do mercado para extrair insights valiosos dos seus dados e transformá-los em conhecimento aplicado.
 
-Se você é um mestrando ou doutorando que precisa de ajuda para coletar, organizar, analisar e interpretar os dados da sua pesquisa, nós podemos te auxiliar em todas as etapas do processo, desde a definição da metodologia até a elaboração dos resultados e conclusões.
+Install Tailwind and build the CSS:
 
-Se você é um pequeno empresário que quer aproveitar o potencial dos dados para melhorar a gestão, a produtividade e a competitividade do seu negócio, nós podemos te oferecer soluções de inteligência artificial que vão desde a automação de tarefas até a criação de modelos preditivos e prescritivos que vão te ajudar na tomada de decisões.
+`Trunk.toml` is configured to build the CSS automatically.
 
-Nós temos uma equipe qualificada e experiente em ciência de dados e inteligência artificial, que está sempre atualizada com as novidades e tendências da área. Nós trabalhamos com transparência, ética e comprometimento com os nossos clientes, buscando sempre entregar soluções inovadoras, eficientes e satisfatórias.
+Install trunk to client side render this bundle.
 
-Entre em contato conosco e saiba mais sobre os nossos serviços. Nós estamos prontos para atender às suas necessidades e superar as suas expectativas.
+`cargo install trunk`
+Then the site can be served with `trunk serve --open`
+
+The browser will automatically open [http://127.0.0.1:8080//](http://127.0.0.1:8080//)
+
+You can begin editing your app at `src/app.rs`.
+
+## Installing Tailwind
+
+You can install Tailwind using `npm`:
+
+```bash
+npm install -D tailwindcss
+```
+
+If you'd rather not use `npm`, you can install the Tailwind binary [here](https://github.com/tailwindlabs/tailwindcss/releases).
+
+## Setting up with VS Code and Additional Tools
+
+If you're using VS Code, add the following to your `settings.json`
+
+```json
+  "emmet.includeLanguages": {
+    "rust": "html",
+    "*.rs": "html"
+  },
+  "tailwindCSS.includeLanguages": {
+      "rust": "html",
+      "*.rs": "html"
+  },
+  "files.associations": {
+      "*.rs": "rust"
+  },
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": true
+  },
+  "css.validate": false,
+```
+
+Install [Tailwind CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss).
+
+    Install "VS Browser" extension, a browser at the right window.
+    Allow vscode Ports forward: 3000, 3001.
+
+## Notes about Tooling
+
+By default, `cargo-leptos` uses `nightly` Rust, `cargo-generate`, and `sass`. If you run into any trouble, you may need to install one or more of these tools.
+
+1. `rustup toolchain install nightly --allow-downgrade` - make sure you have Rust nightly
+2. `rustup default nightly` - setup nightly as default, or you can use rust-toolchain file later on
+3. `rustup target add wasm32-unknown-unknown` - add the ability to compile Rust to WebAssembly
+4. `cargo install cargo-generate` - install `cargo-generate` binary (should be installed automatically in future)
+5. `npm install -g sass` - install `dart-sass` (should be optional in future
+
+
+## Attribution
+This is based on the original Tailwind example (../examples/tailwind)

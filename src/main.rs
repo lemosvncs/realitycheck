@@ -1,16 +1,15 @@
+mod app;
+
+use app::*;
 use leptos::*;
 
-#[component]
-fn App(cx: Scope) -> impl IntoView {
-    view! {cx,
-        <section class="bg-black relative text-white">
-            <div>
-                <p class="text-white">"Oi"</p>
-            </div>
-        </section>
-    }
-} 
+pub fn main() {
+    _ = console_log::init_with_level(log::Level::Debug);
+    console_error_panic_hook::set_once();
 
-fn main() {
-    mount_to_body(|cx| view! { cx, <App/>})
+    log!("csr mode - mounting to body");
+
+    mount_to_body(|cx| {
+        view! { cx, <App /> }
+    });
 }
